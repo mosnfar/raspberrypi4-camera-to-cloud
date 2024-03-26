@@ -10,6 +10,9 @@ RETRY_COUNT=0
 
 STORE_DIR="/home/path/to/"
 
+DAY_OF_STORAGE=2
+MAX_STORAGE_VOLUME=100
+
 # Function to mount Google Drive
 mount_drive() {
     rclone mount --daemon --vfs-cache-mode full rasfeed:RasFeed /home/pii/rasfeed/ >> /home/pii/rclone_mount.log 2>&1
