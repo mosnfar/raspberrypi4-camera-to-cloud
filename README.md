@@ -9,4 +9,4 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 ## How to use
 
-RESOURCES: [Using USB Webcam](https://raspberrypi-guide.github.io/electronics/using-usb-webcams), [Use rclone for Google Drive](https://www.baeldung.com/linux/google-drive-guide)  
+RESOURCES: [Using USB Webcam](https://raspberrypi-guide.github.io/electronics/using-usb-webcams), [Use rclone for Google Drive](https://www.baeldung.com/linux/google-drive-guide#2-rclone), [rclone, Google Drive](https://rclone.org/drive/)
