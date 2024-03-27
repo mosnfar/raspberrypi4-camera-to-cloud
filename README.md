@@ -9,8 +9,8 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 ## How to use
 
-First of all you should install dependencies like "ffmpeg", "rclone". To do it use command below:
-`sudo apt update && sudo apt install ffmpeg rclone`
+First of all you should install dependencies like "ffmpeg", "rclone". To do it use command below:  
+``sudo apt update && sudo apt install ffmpeg rclone``
 
 
 
