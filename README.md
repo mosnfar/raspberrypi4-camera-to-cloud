@@ -1,19 +1,21 @@
-# How to stream raspberry pi feed to cloud
+<div align="center">
+    <h1 style="text-align: center;">Raspberry Pi Feed to Cloud</h1>
+</div>
 
 Connecting a camera to a Raspberry Pi through the on-board camera port or USB port can assist in capturing images or videos. This setup can serve various purposes. In this repository, you can find a prebuilt shell script designed to facilitate continuous image streaming to online cloud services such as Google Drive for Linux-operated Raspberry Pi.
 
-## Use cases
+## 📋 Use cases
 
 - Online Stream of Camera
 - Frame Capture for Timelaps
 
-## How to use
+## 🔧 How to use
 
 First of all, you should install dependencies like "ffmpeg", "rclone". To do it use the command below:  
 
-    ```bash
-    sudo apt update && sudo apt install ffmpeg rclone
-    ```
+```bash
+sudo apt update && sudo apt install ffmpeg rclone
+```
 
 After that, you should configure your cloud service, which here we continue with the Google Drive option.
 I suggest to use this two complete tutorials for proper configuration:  
@@ -23,15 +25,15 @@ I suggest to use this two complete tutorials for proper configuration:
 
 But simply to do that start with rclone, you should use the command below and follow the given instructions:  
 
-    ```bash
-    rclone config
-    ```
+```bash
+rclone config
+```
 
 Now, You should have a directory on your local device to sync Google Drive with it. Here we create a directory named `/home/user/path/to/`, to do this you can use this command:
 
-    ```bash
-    mkdir /home/user/path/to
-    ```
+```bash
+mkdir /home/user/path/to
+```
 
 So, Time to **configure a webcam or camera**. Here I'm using a USB webcam but if you want to use the on-board Raspberry Pi camera follow [this link](https://www.codeinsideout.com/blog/pi/set-up-camera/#record-h264-video).  
 
@@ -42,33 +44,33 @@ Connect the USB webcam to Raspberry Pi and find the hardware directory which in 
 Awesome, All essential parts are configured. Now the script is ready for use.  
 Download the script file to your local machine:
 
-    ```bash
-    curl -L https://raw.githubusercontent.com/mosnfar/raspberrypi4-camera-to-cloud/main/run.sh -o ./run.sh
-    ```
+```bash
+curl -L https://raw.githubusercontent.com/mosnfar/raspberrypi4-camera-to-cloud/main/run.sh -o ./run.sh
+```
 
 Before using the script you should change some variables in the script to work correctly. Use `nano run.sh` to open text editor then go to 'Configure global variables' section and change the variable.
 
-    ```bash
-    ...
+```bash
+...
 
-    # Configure global variables
+# Configure global variables
 
-    DRIVE_ADD="drive:/parentfolder/subfolder" #rclone given address for drive main folder and subfolder
+DRIVE_ADD="drive:/parentfolder/subfolder" #rclone given address for drive main folder and subfolder
 
-    STORE_DIR="/home/user/path/to/" #Local directory which will link to drive
-    LOG_DIR="/home/user/path/for/log/" #Directory to store log for command
+STORE_DIR="/home/user/path/to/" #Local directory which will link to drive
+LOG_DIR="/home/user/path/for/log/" #Directory to store log for command
 
-    CAMERA_ADD="/dev/video0" #Hardware directory for Video Input
+CAMERA_ADD="/dev/video0" #Hardware directory for Video Input
 
-    DAY_OF_STORAGE=2 #Maximum date for storage - e.g. 2 days
-    MAX_STORAGE_SIZE=200000000 #Maximum size for storage - e.g. 200000000 Byte -> 200 MB
+DAY_OF_STORAGE=2 #Maximum date for storage - e.g. 2 days
+MAX_STORAGE_SIZE=200000000 #Maximum size for storage - e.g. 200000000 Byte -> 200 MB
 
-    INTERVAL_DELAY=10 #Interval between taking frames - e.g. 10 seconds
+INTERVAL_DELAY=10 #Interval between taking frames - e.g. 10 seconds
 
-    MAX_RETRIES=10 #Times to rclone try
+MAX_RETRIES=10 #Times to rclone try
 
-    ...
-    ```
+...
+```
 
 You should change these variables:
 
@@ -92,14 +94,15 @@ If you customize the script more, you can change this too.
 
 Now everything is done and you should add `run.sh` command to system jobs to be run on every reboot. To do that use this command:
 
-    ```bash
-    sudo chmod +x run.sh && (crontab -l ; echo "@reboot /real/path/to/run.sh") | crontab - && crontab -l
-   ``` 
+```bash
+sudo chmod +x run.sh && (crontab -l ; echo "@reboot /real/path/to/run.sh") | crontab - && crontab -l
+```
 
 And its better to reboot your system.
 
 🎉 It's Done. All is ready.
 
+---
 
 ### Find More
 
