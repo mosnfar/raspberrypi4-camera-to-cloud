@@ -1,6 +1,4 @@
-<div align="center">
-    <h1 style="text-align: center;">Raspberry Pi Feed to Cloud</h1>
-</div>
+# Raspberry Pi Feed to Cloud
 
 Connecting a camera to a Raspberry Pi through the on-board camera port or USB port can assist in capturing images or videos. This setup can serve various purposes. In this repository, you can find a prebuilt shell script designed to facilitate continuous image streaming to online cloud services such as Google Drive for Linux-operated Raspberry Pi.
 
