@@ -3,22 +3,25 @@
 # Buffer time for system boot
 sleep 30
 
-
-# Configure global variables
-MAX_RETRIES=10
+# Basic variables
 RETRY_COUNT=0
 
-DRIVE_ADD="drive:directory/subdirectory"
 
-STORE_DIR="/home/path/to/"
-LOG_DIR="/home/path/for/log/"
+# Configure global variables
 
-CAMERA_ADD="/dev/video0"
+DRIVE_ADD="drive:/parentfolder/subfolder" #rclone given address for drive main folder and subfolder
+
+STORE_DIR="/home/user/path/to/" #Local directory which will link to drive
+LOG_DIR="/home/user/path/for/log/" #Directory to store log for command
+
+CAMERA_ADD="/dev/video0" #Hardware directory for Video Input
 
 DAY_OF_STORAGE=2 #Maximum date for storage - e.g. 2 days
 MAX_STORAGE_SIZE=200000000 #Maximum size for storage - e.g. 200000000 Byte -> 200 MB
 
 INTERVAL_DELAY=10 #Interval between taking frames - e.g. 10 seconds
+
+MAX_RETRIES=10 #Times to rclone try
 
 # Function to mount Google Drive
 mount_drive() {
