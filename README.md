@@ -9,7 +9,7 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 ## 🔧 How to use
 
-First of all, you should install dependencies like 'ffmpeg', 'rclone'. To do it use the command below:  
+First, you should install dependencies like 'ffmpeg', 'rclone'. To do it use the command below:  
 
 ```bash
 sudo apt update && sudo apt install ffmpeg rclone
@@ -81,7 +81,7 @@ Should change this before running this script according to your configuration.
 - **LOG_DIR**: Where you want to store your system script logs and errors.
 - **CAMERA_ADD**: Hardware address of video input (webcam|camera) to use.
 - **DAY_OF_STORAGE**: By this variable, you can configure how many days should store the content.
-- **MAX_STORAGE_SIZE**: This variable is used to manage Drive capacity and prevent extending from Google storage limit.
+- **MAX_STORAGE_SIZE**: This variable manages Drive capacity and prevents extending from Google storage limit.
 - **INTERVAL_DELAY**: This is the gap time between taking frames.
 
 **Additional Variables**
