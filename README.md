@@ -5,7 +5,7 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 ## 📋 Use cases
 
 - Online Stream of Camera
-- Frame Capture for Timelaps
+- Frame Capture for Time-lapse
 
 ## 🔧 How to use
 
