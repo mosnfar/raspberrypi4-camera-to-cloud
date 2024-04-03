@@ -6,7 +6,7 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 - Online Stream of Camera
 - Frame Capture for Time-lapse
-- Object Tracking
+- Object Tracking using Cloud
 
 ## 🔧 How to use
 
@@ -105,6 +105,6 @@ And its better to reboot your system.
 
 ### Find More
 
-I hope this help you. You can subscribe to my [yotube channel](https://www.youtube.com/channel/UC3pFrJCbA9GuHs5uEkexgdw) or support [my blog](https://build.mosn.me/?source=github-rp4-to-drive) to find out more stuff which help you.  
+I hope this can help you. You can subscribe to my [yotube channel](https://www.youtube.com/channel/UC3pFrJCbA9GuHs5uEkexgdw) or support [my blog](https://build.mosn.me/?source=github-rp4-to-drive) to find out more stuff which help you.  
 
 RESOURCES: [Using USB Webcam](https://raspberrypi-guide.github.io/electronics/using-usb-webcams), [Use rclone for Google Drive](https://www.baeldung.com/linux/google-drive-guide#2-rclone), [rclone, Google Drive](https://rclone.org/drive/)
