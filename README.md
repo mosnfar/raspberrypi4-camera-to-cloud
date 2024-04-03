@@ -6,6 +6,7 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 - Online Stream of Camera
 - Frame Capture for Time-lapse
+- Object Tracking
 
 ## 🔧 How to use
 
@@ -35,7 +36,7 @@ mkdir /home/user/path/to
 
 So, Time to **configure a webcam or camera**. Here I'm using a USB webcam but if you want to use the on-board Raspberry Pi camera follow [this link](https://www.codeinsideout.com/blog/pi/set-up-camera/#record-h264-video).  
 
-![USB webcam connected to Raspberry Pi 4](/assets/images/webcam-to-rp4.png "USB webcam connected to Pi 4")
+![USB webcam connected to Raspberry Pi 4](/assets/images/webcam-to-rp4.png)
 
 Connect the USB webcam to Raspberry Pi and find the hardware directory which in this example is `/dev/video0`.
 
