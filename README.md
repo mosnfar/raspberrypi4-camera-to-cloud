@@ -6,6 +6,7 @@ Connecting a camera to a Raspberry Pi through the on-board camera port or USB po
 
 - Online Stream of Camera
 - Frame Capture for Time-lapse
+- Object Tracking using Cloud
 
 ## 🔧 How to use
 
@@ -35,7 +36,7 @@ mkdir /home/user/path/to
 
 So, Time to **configure a webcam or camera**. Here I'm using a USB webcam but if you want to use the on-board Raspberry Pi camera follow [this link](https://www.codeinsideout.com/blog/pi/set-up-camera/#record-h264-video).  
 
-![USB webcam connected to Raspberry Pi 4](/assets/images/webcam-to-rp4.png "USB webcam connected to Pi 4")
+![USB webcam connected to Raspberry Pi 4](/assets/images/webcam-to-rp4.png)
 
 Connect the USB webcam to Raspberry Pi and find the hardware directory which in this example is `/dev/video0`.
 
@@ -104,6 +105,6 @@ And its better to reboot your system.
 
 ### Find More
 
-I hope this help you. You can subscribe to my [yotube channel](https://www.youtube.com/channel/UC3pFrJCbA9GuHs5uEkexgdw) or support [my blog](https://build.mosn.me/?source=github-rp4-to-drive) to find out more stuff which help you.  
+I hope this can help you. You can subscribe to my [yotube channel](https://www.youtube.com/channel/UC3pFrJCbA9GuHs5uEkexgdw) or support [my blog](https://build.mosn.me/?source=github-rp4-to-drive) to find out more stuff which help you.  
 
 RESOURCES: [Using USB Webcam](https://raspberrypi-guide.github.io/electronics/using-usb-webcams), [Use rclone for Google Drive](https://www.baeldung.com/linux/google-drive-guide#2-rclone), [rclone, Google Drive](https://rclone.org/drive/)
