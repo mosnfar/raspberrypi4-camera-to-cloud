@@ -109,4 +109,6 @@ I hope this can help you. You can subscribe to my [yotube channel](https://www.y
 
 [![Youtube](https://img.shields.io/badge/Youtube_Channel-FF0000?style=for-the-badge&logo=Youtube&logoColor=white)](https://www.youtube.com/channel/UC3pFrJCbA9GuHs5uEkexgdw)
 
+---
+
 RESOURCES: [Using USB Webcam](https://raspberrypi-guide.github.io/electronics/using-usb-webcams), [Use rclone for Google Drive](https://www.baeldung.com/linux/google-drive-guide#2-rclone), [rclone, Google Drive](https://rclone.org/drive/)
